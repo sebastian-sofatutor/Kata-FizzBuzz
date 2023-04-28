@@ -10,27 +10,29 @@
 #  gem 'rspec'
 # end
 
-class Greeter
-  attr_accessor :person
-  
-  def initialize(person:)
-    @person = person
-  end
+# class Greeter
+#  attr_accessor :person
 
-  def greet
-    "Hi, #{person} 🎉!"
-  end
-end
-
+#  def initialize(person:)
+#    @person = person
+#  end
+#
+#  def greet
+#    "Hi, #{person} 🎉!"
+#  end
+# end
+#
 require 'rspec/autorun'
 
-RSpec.describe Greeter do
-  subject { Greeter.new(person: 'Rosa') }
+# RSpec.describe Greeter do
+#  subject { Greeter.new(person: 'Rosa') }
 
-  describe '#greet' do
-    it 'greets the person' do
-      # This should fail because of the different emoji
-      expect(subject.greet).to eq('Hi, Rosa 🎉!')
-    end  
-  end
-end
+#  describe '#greet' do
+#    it 'greets the person' do
+#      # This should fail because of the different emoji
+#      expect(subject.greet).to eq('Hi, Rosa 🎉!')
+#    end
+#  end
+# end
+
+require_relative 'gilded_rose_spec'
